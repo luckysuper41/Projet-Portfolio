@@ -2,9 +2,10 @@
 /*About*/
 
 .about{
-	padding: 30px 0;
+	padding: 60px 0;
 	margin: 0 auto;
 	background: #073042;
+	background: linear-gradient(0deg, #000,#073042 );
 	position: relative;
 	width: 100%;
 	overflow: hidden;
@@ -23,8 +24,8 @@
 	position: relative;
 	animation: scaletitle 2s step-end infinite;
 	animation-delay: 0s;
-	position: relative;
-	padding: 30px 0;
+	margin: 30px 0 50px 0;
+	text-transform: uppercase;
 	transition: all 0.5s ease-in-out;
 }
 
@@ -132,8 +133,8 @@
 }
 
 .about-content div.about-me:hover .abt-title{
-	transform: scale(1.05);
 	text-shadow: -1px -1px  rgb(36, 81, 218);
+	transform: scale(1.05);
 }
 
 .about-content div.about-me .abt-title{
@@ -165,7 +166,7 @@
 	text-align: justify;
 }
 
-.about-content div.skills{
+.about-content div.hobbies{
 	position: relative;
 	grid-area: skill;
 	margin: 0 auto;
@@ -178,25 +179,25 @@
 	transition: all 0.5s ease-in-out;
 }
 
-.about-content div.skills:hover{
+.about-content div.hobbies:hover{
 	transform: perspective(600px) scale(1.02) rotateY(-3deg);
 	background: rgba(0, 0, 0, 0.02);
 }
 
-.about-content div.skills:hover .skill-title{
-	transform: scale(1.05);
+.about-content div.hobbies:hover .hobbies-title{
+	transform:scale(1.05);
 	text-shadow: -1px -1px  rgb(36, 81, 218);
 }
-.about-content div.skills .skill-content{
+.about-content div.hobbies .hobbies-content{
 	position: relative;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 	grid-gap: 15px;
 	justify-content: center;
 	align-items: center;
 }
 
-.about-content div.skills .skill-title{
+.about-content div.hobbies .hobbies-title{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -218,7 +219,7 @@
 	text-transform: uppercase;
 }
 
-.about-content div.skills .skill-content .skl-item{
+.about-content div.hobbies .hobbies-content .hobbies-item{
 	overflow: hidden;
 	display: block;
 	position: relative;
@@ -234,13 +235,14 @@
 	font-weight: bold;
 	transition: all 0.3s ease-in-out;
 	background: #ffffff;
+	border-radius: 3px;
 }
 
-.about-content div.skills .skl-item i{
+.about-content div.hobbies .hobbies-item i{
 	font-size: 1.2rem;
 }
 
-.about-content div.skills .skl-item:hover{
+.about-content div.hobbies .hobbies-item:hover{
 	transform: perspective(600px) scale(1.1) rotateY(10deg);
 }
 
@@ -268,6 +270,220 @@ main{
 }
 
 
+
+
+
+
+
+/*Formation*/
+.body-formation{
+	position: relative;
+	margin:0 auto;
+     padding: 50px 0;
+	display: flex;
+	flex-direction: column;
+     justify-content: center;
+     align-items: center;
+	min-height: 80vh;
+	width: 100%;
+
+}
+
+.body-formation .formation-title{
+	color: rgb(6, 218, 255);
+	text-shadow: -1px -2px  rgb(27, 88, 255);
+	margin: 0 auto;
+	text-align: center;
+	font-weight: bold;
+	font-size: 2.4rem;
+	letter-spacing: 2px;
+	position: relative;
+	margin-bottom: 70px;
+	transition: all 0.5s ease-in-out;
+	text-transform: uppercase;
+}
+@keyframes updownforma{
+	0%,100%{
+		transform: translateY(4px);
+	}
+	50%{
+		transform: translateY(-4px);
+	}
+}
+.body-formation .formation-title:hover{
+	font-size: 2.55rem;
+	animation: updownforma 0.5s ease infinite;
+}
+
+
+
+
+.body-formation .formation{
+     position: relative;
+     width: 85%;
+     display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+	grid-column-gap: 30px;
+	grid-row-gap: 80px;
+	padding: 0;
+	margin: 0;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.formation .box{
+     position: relative;
+     background: #060c21;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border: 1px solid #000;
+	min-height: 440px;
+	width: 310px;
+	transition: 0.5s;
+	border-radius: 2px;
+	margin: 0 auto;
+}
+  
+
+.formation .box:nth-child(1):hover{
+     background: url(../img/about/qnhon.jpeg);
+     background-position: center;
+     background-size: cover;
+     box-shadow: inset 0px -150px 200px #000000, inset 0px 0px 50px #000000;
+
+}
+.formation .box:nth-child(2):hover{
+     background: url(../img/about/hue.jpeg);
+     background-position: center;
+     background-size: cover;
+     box-shadow: inset 0px -150px 200px #000000, inset 0px 0px 50px #000000;
+
+}
+.formation .box:nth-child(3):hover{
+     background: url(../img/about/blois.jpeg);
+     background-position: center;
+     background-size: cover;
+     box-shadow: inset 0px -150px 200px #000000, inset 0px 0px 50px #000000;
+
+}
+.formation .box:nth-child(4):hover{
+     background: url(../img/about/paris.jpeg);
+     background-position: center;
+     background-size: cover;
+     box-shadow: inset 0px -150px 200px #000000, inset 0px 0px 50px #000000;
+
+}
+
+
+.formation .box:before{
+     content: '';
+     position: absolute;
+     top: -2px;
+     left: -2px;
+     right: -2px;
+     bottom: -2px;
+     background: #fff;
+	transform: skew(2deg,2deg);
+	z-index: -1;
+}
+
+.formation .box:nth-child(1):before{
+     background: linear-gradient(315deg,#ff0057,#e64a19) ;
+}
+.formation .box:nth-child(2):before{
+     background: linear-gradient(315deg,#89ff00,#00bcd4) ;
+}
+.formation .box:nth-child(3):before{
+     background: linear-gradient(315deg,#e91e63,#5d02ff) ;
+}
+.formation .box:nth-child(4):before{
+     background: linear-gradient(315deg,#ff0000,#ffc107) ;
+}
+
+.formation .box:after{
+     content: '';
+     position: absolute;
+     top: 0px;
+     left: 0px;
+     width: 50%;
+     height: 50%;
+     background: rgba(255,255,255,0.05);
+	pointer-events: none;
+}
+
+.formation .content{
+     position: relative;
+     padding: 25px;
+}
+
+.formation .content h2{
+     position: absolute;
+     top: 0;
+     right: 20px;
+     margin: 0;
+     padding: 0;
+	font-size: 4rem;
+	text-shadow: -1px -2px  rgb(36, 206, 218);
+     color: rgba(29, 255, 206, 0.5);
+     transition: 0.5s;
+     min-height: 100px;
+}
+
+.box:hover .content h2{
+	top: -50px;
+
+}
+
+.box .content h3{
+     position: absolute;
+     min-height: 50px;
+     top: 45%;
+     left: 0%;
+     width: 100%;
+     text-align: center;
+     margin:  0 0 10px;
+     padding: 0;
+     font-size: 1.3rem;
+     font-weight: 600;
+     color: rgb(36, 206, 218);
+     transform: translateY(0);
+     transition: all 0.5s ease-in-out;
+}
+
+.box:hover .content h3{
+	color: #fff;
+     position: relative;
+     transform: translateY(10px);
+     transition: all 1s ease-in-out;
+}
+
+.box .content p{  
+     justify-content: flex-end;
+     margin:  0;
+     padding: 0;
+     font-size: 1.1rem;
+     line-height: 1.5rem;
+     color: #fff;
+     opacity: 0;
+     visibility: hidden;
+     transition: all 0.5s ease-in-out;
+	min-height: 220px;
+	text-align: center;
+
+}
+
+
+
+.box:hover .content p{
+     color: #fff;
+     opacity: 1;
+     visibility: visible;
+}
+
+
+
 /*Media header*/
 @media only screen and (max-width: 1280px){
 
@@ -276,7 +492,7 @@ main{
 			'infos  aboutme '
 			'skill skill ';
 	}
-	.about-content div.skills:hover{
+	.about-content div.hobbies:hover{
 		transform: perspective(600px) scale(1.02) rotateY(0deg);
 	}
 }
@@ -298,7 +514,7 @@ main{
 		transform: perspective(600px) scale(1.02) rotateY(0deg);
 		background: rgba(0, 0, 0, 0.02);
 	}
-	.about-content div.skills:hover{
+	.about-content div.hobbies:hover{
 		transform: perspective(600px) scale(1.02) rotateY(0deg);
 	}
 
@@ -318,6 +534,11 @@ main{
 		margin: 0 auto;
 	}
 	
+	.formation .box{
+		min-height: 440px;
+		width: 330px;
+
+	}
 }
 
 @media only screen and (max-width: 768px){
@@ -333,6 +554,11 @@ main{
 	.infos div.content-item{
 		margin: 0 auto;
 		margin-left: 10px;
+	}
+	.formation .box{
+		min-height: 440px;
+		width: 300px;
+
 	}
 }
 
@@ -350,7 +576,6 @@ main{
 		align-items: center;
 		padding: 10px 0;
 		min-height: 350px;
-		width: 80%;
 	}
 
 	.about-content div.infos img{
@@ -391,11 +616,11 @@ main{
 		font-size: 1.3rem;
 	}
 	
-	.about-content div.skills .skill-title{
+	.about-content div.hobbies .skill-title{
 		font-size: 1.3rem;
 	}
 
-	.about-content div.skills{
+	.about-content div.hobbies{
 		min-height: 370px;
 	}
 
@@ -404,5 +629,15 @@ main{
 		line-height: 1.3rem;
 		text-align: justify;
 	}
+
+	.formation .box{
+		min-height: 400px;
+		width: 270px;
+
+	}
 	
 }
+
+
+
+

@@ -30,7 +30,7 @@ $(document).ready(function() {
 });*/
 
 /* About */
-const buttons_eau = document.querySelectorAll('.skl-item');
+const buttons_eau = document.querySelectorAll('.hobbies-item');
 buttons_eau.forEach(btn => {
      btn.addEventListener('mouseenter',function(){         
           let ripples = document.createElement('main');
@@ -44,4 +44,17 @@ buttons_eau.forEach(btn => {
      })
 });
 
-	
+     
+$(document).ready(function() {
+
+     $('#navigation a,.sidebar a').click(function(event) {
+     event.preventDefault();
+     
+     part = $(this).attr('href');
+
+     position = $(part).offset().top;
+     
+
+     $('html, body').animate({scrollTop: position},1400);
+     });
+});
