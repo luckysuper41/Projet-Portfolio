@@ -1,8 +1,9 @@
 /*Header*/
+/*
 $(document).ready(function() {
 	$(window).scroll(function(event) {
 		var pos_body = $('html,body').scrollTop();
-
+     
 	// console.log(pos_body);
 	if(pos_body>60){
       $('.header-nav').addClass('scroll-header');
@@ -18,9 +19,15 @@ $(document).ready(function() {
       $('header #toggle').removeClass('scroll-toggle');
       $('.wrapper-header .sidebar').removeClass('scroll-wrapper');
 	}
-  	});
+     });
+       
+     $('.back-to-top').click(function(event) {
+          $('html,body').animate({
+               scrollTop: 0},
+               1400);
+	});
 
-});
+});*/
 
 /* About */
 const buttons_eau = document.querySelectorAll('.skl-item');

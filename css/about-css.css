@@ -4,7 +4,7 @@
 .about{
 	padding: 30px 0;
 	margin: 0 auto;
-	background: #fff;
+	background: #073042;
 	position: relative;
 	width: 100%;
 	overflow: hidden;
@@ -13,12 +13,12 @@
 
 
 .about div.about-title{
-	color: rgb(27, 221, 255);
-	text-shadow: -1px -2px  rgb(27, 228, 255);
+	color: rgb(6, 218, 255);
+	text-shadow: -1px -2px  rgb(27, 88, 255);
 	margin: 0 auto;
 	text-align: center;
 	font-weight: bold;
-	font-size: 2.2rem;
+	font-size: 2.5rem;
 	letter-spacing: 2px;
 	position: relative;
 	animation: scaletitle 2s step-end infinite;
@@ -39,7 +39,7 @@
 }
 
 .about div.about-title:hover{
-	font-size: 2.4rem;
+	font-size: 2.6rem;
 }
 
 .about div.about-content{
@@ -51,10 +51,9 @@
 		'infos infos infos skill skill skill';
 	width: 70%;
 	margin: 0 auto;
-	border-radius: 20px;
 	padding: 30px;
-	box-shadow: inset 0px 0px 5px 3px rgba(255, 78, 217, 0.5);
-	z-index: 1;
+	box-shadow: inset 0px 0px 5px 3px #03e9f4;
+	border-radius: 5px;
 	transition: all 0.5s ease-in-out;
 }
 
@@ -70,9 +69,9 @@
 	min-width: 300px;
 	width: 100%;
 	margin: 0 auto;
-	border-radius: 10px;
-	box-shadow: inset 0px 0px 5px 3px rgba(255, 78, 217, 0.5);
+	box-shadow: inset 0px 0px 5px 3px #03e9f4;
 	position: relative;
+	border-radius: 5px;
 	transform: perspective(600px) rotate(0deg);
 	transition: all 0.5s ease-in-out;
 }
@@ -93,7 +92,7 @@
 	height: 240px;
 	border-radius: 50%;
 	border: 1px solid #000;
-	box-shadow: 0 0 5px 3px rgba(255, 0, 0, 0.5);
+	box-shadow: 0 0 5px 3px rgba(255, 240, 240, 0.5);
 	transition: all 0.5s ease-in-out;
 }
 
@@ -105,7 +104,7 @@
 .infos div.content-item .item-text{
 	font-size: 1.1rem;
 	line-height: 2rem;
-	color: #000;
+	color: #fff;
 }
 
 .infos div.content-item .item-text span{
@@ -118,12 +117,11 @@
 	grid-area: aboutme;
 	position: relative;
 	margin: 0 auto;
-	border: 1px solid #c3c3c3;
 	padding: 20px;
 	min-width: 300px;
 	width: 100%;
-	border-radius: 10px;
-	box-shadow: inset 0px 0px 5px 3px rgba(255, 78, 217, 0.5);
+	border-radius: 5px;
+	box-shadow: inset 0px 0px 5px 3px #03e9f4;
 	transform: perspective(600px) rotate(0deg);
 	transition: all 0.5s ease-in-out;
 }
@@ -142,26 +140,28 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 1.7rem;
+	font-size: 1.6rem;
 	font-weight: bold;
 	text-align: center;
 	margin: 0 auto;
 	padding: 5px 0;
 	letter-spacing: 1px;
-	width: 90%;
-	color: rgb(56, 175, 255);
-	box-shadow: inset 0px 0px 5px 3px rgba(183, 60, 255, 0.5);;
-	text-shadow: -1px -2px  rgb(56, 175, 255);
-	background: #ffd4bb;
-	border-radius: 10px;
+	width: 80%;
+	border-radius: 5px;
+	color: rgb(5, 217, 255);
+
+	box-shadow: inset 0px 0px 5px 3px #4bf6ff;
+	text-shadow: -1px -2px  rgb(36, 81, 218);
+	background: #eeeeee;
 	margin-bottom: 20px;
 	transition: all 0.5s ease-in-out;
+	text-transform: uppercase;
 }
 
 .about-content div.about-me .abtme-content{
 	font-size: 1rem;
 	line-height: 1.5rem;
-	color: #000;
+	color: #fff;
 	text-align: justify;
 }
 
@@ -172,8 +172,8 @@
 	padding: 20px;
 	min-width: 300px;
 	width: 100%;
-	border-radius: 10px;
-	box-shadow: inset 0px 0px 5px 3px rgba(255, 78, 217, 0.5);
+	border-radius: 5px;
+	box-shadow: inset 0px 0px 5px 3px #03e9f4;
 	transform: perspective(600px) rotate(0deg);
 	transition: all 0.5s ease-in-out;
 }
@@ -200,20 +200,22 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 1.7rem;
+	font-size: 1.6rem;
 	font-weight: bold;
 	text-align: center;
 	margin: 0 auto;
 	padding: 5px 0;
 	letter-spacing: 2px;
-	width: 90%;
-	color: rgb(56, 175, 255);
-	box-shadow: inset 0px 0px 5px 3px rgba(183, 60, 255, 0.5);
-	text-shadow: -1px -2px  rgb(56, 175, 255);
-	background: #ffd4bb;
-	border-radius: 10px;
+	width: 80%;
+	color: rgb(5, 217, 255);
+
+	box-shadow: inset 0px 0px 5px 3px #4bf6ff;
+	text-shadow: -1px -2px  rgb(36, 81, 218);
+	background: #eeeeee;
+	border-radius: 5px;
 	margin-bottom: 20px;
 	transition: all 0.5s ease-in-out;
+	text-transform: uppercase;
 }
 
 .about-content div.skills .skill-content .skl-item{
@@ -365,7 +367,6 @@ main{
 	.infos div.content-item .item-text{
 		font-size: 1rem;
 		line-height: 2rem;
-		color: #000;
 	}
 	
 	.infos div.content-item .item-text span{
@@ -379,22 +380,29 @@ main{
 
 	
 	.about div.about-title{
-		font-size: 1.6rem;
-	}
-
-	.about div.about-title:hover{
 		font-size: 1.7rem;
 	}
 
+	.about div.about-title:hover{
+		font-size: 1.8rem;
+	}
+
 	.about-content div.about-me .abt-title{
-		font-size: 1.5rem;
+		font-size: 1.3rem;
 	}
 	
 	.about-content div.skills .skill-title{
-		font-size: 1.5rem;
+		font-size: 1.3rem;
 	}
 
 	.about-content div.skills{
 		min-height: 370px;
 	}
+
+	.about-content div.about-me .abtme-content{
+		font-size: 1rem;
+		line-height: 1.3rem;
+		text-align: justify;
+	}
+	
 }
