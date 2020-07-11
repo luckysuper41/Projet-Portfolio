@@ -1,0 +1,400 @@
+
+/*About*/
+
+.about{
+	padding: 30px 0;
+	margin: 0 auto;
+	background: #fff;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	transition: all 0.5s ease-in-out;
+}
+
+
+.about div.about-title{
+	color: rgb(27, 221, 255);
+	text-shadow: -1px -2px  rgb(27, 228, 255);
+	margin: 0 auto;
+	text-align: center;
+	font-weight: bold;
+	font-size: 2.2rem;
+	letter-spacing: 2px;
+	position: relative;
+	animation: scaletitle 2s step-end infinite;
+	animation-delay: 0s;
+	position: relative;
+	padding: 30px 0;
+	transition: all 0.5s ease-in-out;
+}
+
+@keyframes scaletitle{
+	0%,40%,80%{
+		transform: rotate(2deg);
+	}
+	20%,60%,100%{
+		transform: rotate(-2deg);
+	}
+	
+}
+
+.about div.about-title:hover{
+	font-size: 2.4rem;
+}
+
+.about div.about-content{
+	position: relative;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas: 
+		'infos infos infos aboutme aboutme aboutme'
+		'infos infos infos skill skill skill';
+	width: 70%;
+	margin: 0 auto;
+	border-radius: 20px;
+	padding: 30px;
+	box-shadow: inset 0px 0px 5px 3px rgba(255, 78, 217, 0.5);
+	z-index: 1;
+	transition: all 0.5s ease-in-out;
+}
+
+.about div.about-content:hover{
+	transform: scale(1.01);
+}
+
+.about-content div.infos{
+	grid-area: infos;
+	border: 1px solid #c3c3c3;
+	box-shadow: 3px 3px  rgba(0, 0, 0, 0.2);
+	padding: 50px 20px;
+	min-width: 300px;
+	width: 100%;
+	margin: 0 auto;
+	border-radius: 10px;
+	box-shadow: inset 0px 0px 5px 3px rgba(255, 78, 217, 0.5);
+	position: relative;
+	transform: perspective(600px) rotate(0deg);
+	transition: all 0.5s ease-in-out;
+}
+
+.about-content div.infos:hover{
+	transform: perspective(600px) scale(1.02) rotateY(3deg);
+	background: rgba(0, 0, 0, 0.02);
+}
+
+.about-content div.infos:hover img{
+	transform: scale(1.03);
+}
+
+
+.about-content div.infos img{
+	margin-left: 20px;
+	width: 240px;
+	height: 240px;
+	border-radius: 50%;
+	border: 1px solid #000;
+	box-shadow: 0 0 5px 3px rgba(255, 0, 0, 0.5);
+	transition: all 0.5s ease-in-out;
+}
+
+.infos div.content-item{
+	margin-left: 15px;
+	margin-top: 40px;
+}
+
+.infos div.content-item .item-text{
+	font-size: 1.1rem;
+	line-height: 2rem;
+	color: #000;
+}
+
+.infos div.content-item .item-text span{
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+
+.about-content div.about-me{
+	grid-area: aboutme;
+	position: relative;
+	margin: 0 auto;
+	border: 1px solid #c3c3c3;
+	padding: 20px;
+	min-width: 300px;
+	width: 100%;
+	border-radius: 10px;
+	box-shadow: inset 0px 0px 5px 3px rgba(255, 78, 217, 0.5);
+	transform: perspective(600px) rotate(0deg);
+	transition: all 0.5s ease-in-out;
+}
+
+.about-content div.about-me:hover{
+	transform: perspective(600px) scale(1.02) rotateY(-3deg);
+	background: rgba(0, 0, 0, 0.02);
+}
+
+.about-content div.about-me:hover .abt-title{
+	transform: scale(1.05);
+	text-shadow: -1px -1px  rgb(36, 81, 218);
+}
+
+.about-content div.about-me .abt-title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.7rem;
+	font-weight: bold;
+	text-align: center;
+	margin: 0 auto;
+	padding: 5px 0;
+	letter-spacing: 1px;
+	width: 90%;
+	color: rgb(56, 175, 255);
+	box-shadow: inset 0px 0px 5px 3px rgba(183, 60, 255, 0.5);;
+	text-shadow: -1px -2px  rgb(56, 175, 255);
+	background: #ffd4bb;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	transition: all 0.5s ease-in-out;
+}
+
+.about-content div.about-me .abtme-content{
+	font-size: 1rem;
+	line-height: 1.5rem;
+	color: #000;
+	text-align: justify;
+}
+
+.about-content div.skills{
+	position: relative;
+	grid-area: skill;
+	margin: 0 auto;
+	padding: 20px;
+	min-width: 300px;
+	width: 100%;
+	border-radius: 10px;
+	box-shadow: inset 0px 0px 5px 3px rgba(255, 78, 217, 0.5);
+	transform: perspective(600px) rotate(0deg);
+	transition: all 0.5s ease-in-out;
+}
+
+.about-content div.skills:hover{
+	transform: perspective(600px) scale(1.02) rotateY(-3deg);
+	background: rgba(0, 0, 0, 0.02);
+}
+
+.about-content div.skills:hover .skill-title{
+	transform: scale(1.05);
+	text-shadow: -1px -1px  rgb(36, 81, 218);
+}
+.about-content div.skills .skill-content{
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+	grid-gap: 15px;
+	justify-content: center;
+	align-items: center;
+}
+
+.about-content div.skills .skill-title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.7rem;
+	font-weight: bold;
+	text-align: center;
+	margin: 0 auto;
+	padding: 5px 0;
+	letter-spacing: 2px;
+	width: 90%;
+	color: rgb(56, 175, 255);
+	box-shadow: inset 0px 0px 5px 3px rgba(183, 60, 255, 0.5);
+	text-shadow: -1px -2px  rgb(56, 175, 255);
+	background: #ffd4bb;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	transition: all 0.5s ease-in-out;
+}
+
+.about-content div.skills .skill-content .skl-item{
+	overflow: hidden;
+	display: block;
+	position: relative;
+	font-size: 1.05rem;
+	line-height: 1.5rem;
+	color: #000;
+	border: 1px outset #c3c3c3;
+	box-shadow: 3px 3px  rgba(0, 0, 0, 0.4);
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	padding: 5px 10px;
+	font-weight: bold;
+	transition: all 0.3s ease-in-out;
+	background: #ffffff;
+}
+
+.about-content div.skills .skl-item i{
+	font-size: 1.2rem;
+}
+
+.about-content div.skills .skl-item:hover{
+	transform: perspective(600px) scale(1.1) rotateY(10deg);
+}
+
+
+main{
+	position: absolute;
+	background: rgb(125, 217, 233);
+	transform: translate(-50%,-50%);
+	pointer-events: none;
+	border-radius: 50%;
+	animation: animate 1s linear infinite;
+   }
+   
+@keyframes animate{
+0%{
+	width: 0;
+	height: 0;
+	opacity: 0.5;
+}
+100%{
+	width: 500px;
+	height: 500px;
+	opacity: 0;
+}
+}
+
+
+/*Media header*/
+@media only screen and (max-width: 1280px){
+
+	.about div.about-content{
+		grid-template-areas: 
+			'infos  aboutme '
+			'skill skill ';
+	}
+	.about-content div.skills:hover{
+		transform: perspective(600px) scale(1.02) rotateY(0deg);
+	}
+}
+
+@media only screen and (max-width: 1024px){
+
+	.about div.about-content{
+		grid-template-areas: 
+			'infos'  
+			'aboutme'
+			'skill';
+	}
+
+	.about-content div.infos:hover{
+		transform: perspective(600px) scale(1.02) rotateY(0deg);
+		background: rgba(0, 0, 0, 0.02);
+	}
+	.about-content div.about-me:hover{
+		transform: perspective(600px) scale(1.02) rotateY(0deg);
+		background: rgba(0, 0, 0, 0.02);
+	}
+	.about-content div.skills:hover{
+		transform: perspective(600px) scale(1.02) rotateY(0deg);
+	}
+
+	.about-content div.infos{
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+		justify-content: center;
+		align-items: center;
+	}
+
+	.about-content div.infos img{
+		margin: 0 auto;
+		margin-left: 20px;
+	}
+	
+	.infos div.content-item{
+		margin: 0 auto;
+	}
+	
+}
+
+@media only screen and (max-width: 768px){
+	.about div.about-content{
+		width: 80%;
+	}
+
+	.about-content div.infos img{
+		width: 200px;
+		height: 200px;
+	}
+	
+	.infos div.content-item{
+		margin: 0 auto;
+		margin-left: 10px;
+	}
+}
+
+@media only screen and (max-width: 360px){
+	.about div.about-content{
+		width: 100%;
+		box-shadow: none;
+		justify-content: center;
+	}
+
+	.about-content div.infos{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 10px 0;
+		min-height: 350px;
+		width: 80%;
+	}
+
+	.about-content div.infos img{
+		margin: 0 auto;
+		width: 150px;
+		height: 150px;
+		margin-bottom: 10px;
+	}
+	
+	.infos div.content-item{
+		margin: 0 auto;
+		padding: 0;
+	}
+	.infos div.content-item .item-text{
+		font-size: 1rem;
+		line-height: 2rem;
+		color: #000;
+	}
+	
+	.infos div.content-item .item-text span{
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
+
+	.about div.about-content:hover{
+		transform: scale(1);
+	}
+
+	
+	.about div.about-title{
+		font-size: 1.6rem;
+	}
+
+	.about div.about-title:hover{
+		font-size: 1.7rem;
+	}
+
+	.about-content div.about-me .abt-title{
+		font-size: 1.5rem;
+	}
+	
+	.about-content div.skills .skill-title{
+		font-size: 1.5rem;
+	}
+
+	.about-content div.skills{
+		min-height: 370px;
+	}
+}
