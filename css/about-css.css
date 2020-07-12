@@ -4,7 +4,6 @@
 .about{
 	padding: 60px 0;
 	margin: 0 auto;
-	background: #073042;
 	background: linear-gradient(0deg, #000,#073042 );
 	position: relative;
 	width: 100%;
@@ -15,7 +14,7 @@
 
 .about div.about-title{
 	color: rgb(6, 218, 255);
-	text-shadow: -1px -2px  rgb(27, 88, 255);
+	text-shadow: -1px -2px  rgb(67, 170, 189);
 	margin: 0 auto;
 	text-align: center;
 	font-weight: bold;
@@ -53,7 +52,7 @@
 	width: 70%;
 	margin: 0 auto;
 	padding: 30px;
-	box-shadow: inset 0px 0px 5px 3px #03e9f4;
+	border: 2px outset  #03e9f4;
 	border-radius: 5px;
 	transition: all 0.5s ease-in-out;
 }
@@ -64,13 +63,11 @@
 
 .about-content div.infos{
 	grid-area: infos;
-	border: 1px solid #c3c3c3;
-	box-shadow: 3px 3px  rgba(0, 0, 0, 0.2);
 	padding: 50px 20px;
 	min-width: 300px;
 	width: 100%;
 	margin: 0 auto;
-	box-shadow: inset 0px 0px 5px 3px #03e9f4;
+	border: 2px outset  #03e9f4;
 	position: relative;
 	border-radius: 5px;
 	transform: perspective(600px) rotate(0deg);
@@ -122,7 +119,7 @@
 	min-width: 300px;
 	width: 100%;
 	border-radius: 5px;
-	box-shadow: inset 0px 0px 5px 3px #03e9f4;
+	border: 2px outset  #03e9f4;
 	transform: perspective(600px) rotate(0deg);
 	transition: all 0.5s ease-in-out;
 }
@@ -171,10 +168,10 @@
 	grid-area: skill;
 	margin: 0 auto;
 	padding: 20px;
-	min-width: 300px;
+	min-width: 280px;
 	width: 100%;
 	border-radius: 5px;
-	box-shadow: inset 0px 0px 5px 3px #03e9f4;
+	border: 2px outset  #03e9f4;
 	transform: perspective(600px) rotate(0deg);
 	transition: all 0.5s ease-in-out;
 }
@@ -299,8 +296,10 @@ main{
 	letter-spacing: 2px;
 	position: relative;
 	margin-bottom: 70px;
+	animation: updownforma 0.5s ease infinite;
 	transition: all 0.5s ease-in-out;
 	text-transform: uppercase;
+
 }
 @keyframes updownforma{
 	0%,100%{
@@ -312,7 +311,7 @@ main{
 }
 .body-formation .formation-title:hover{
 	font-size: 2.55rem;
-	animation: updownforma 0.5s ease infinite;
+
 }
 
 
