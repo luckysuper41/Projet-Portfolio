@@ -14,29 +14,18 @@
 
 .about div.about-title{
 	color: rgb(6, 218, 255);
-	text-shadow: -1px -2px  rgb(67, 170, 189);
+	text-shadow: -1px -1px  rgb(67, 170, 189);
 	margin: 0 auto;
 	text-align: center;
 	font-weight: bold;
 	font-size: 2.5rem;
 	letter-spacing: 2px;
 	position: relative;
-	animation: scaletitle 2s step-end infinite;
-	animation-delay: 0s;
-	margin: 30px 0 50px 0;
+	margin: 30px 0;
 	text-transform: uppercase;
 	transition: all 0.5s ease-in-out;
 }
 
-@keyframes scaletitle{
-	0%,40%,80%{
-		transform: rotate(2deg);
-	}
-	20%,60%,100%{
-		transform: rotate(-2deg);
-	}
-	
-}
 
 .about div.about-title:hover{
 	font-size: 2.6rem;
@@ -52,14 +41,10 @@
 	width: 70%;
 	margin: 0 auto;
 	padding: 30px;
-	border: 2px outset  #03e9f4;
 	border-radius: 5px;
 	transition: all 0.5s ease-in-out;
 }
 
-.about div.about-content:hover{
-	transform: scale(1.01);
-}
 
 .about-content div.infos{
 	grid-area: infos;
@@ -67,16 +52,17 @@
 	min-width: 300px;
 	width: 100%;
 	margin: 0 auto;
-	border: 2px outset  #03e9f4;
+	
 	position: relative;
 	border-radius: 5px;
+	border: 1px outset  #2d3838;
+	background: linear-gradient(180deg,rgb(35, 34, 36),#073042);
 	transform: perspective(600px) rotate(0deg);
 	transition: all 0.5s ease-in-out;
 }
 
 .about-content div.infos:hover{
 	transform: perspective(600px) scale(1.02) rotateY(3deg);
-	background: rgba(0, 0, 0, 0.02);
 }
 
 .about-content div.infos:hover img{
@@ -119,14 +105,14 @@
 	min-width: 300px;
 	width: 100%;
 	border-radius: 5px;
-	border: 2px outset  #03e9f4;
+	border: 1px outset  #2d3838;
+	background: linear-gradient(-180deg,rgb(35, 34, 36),#073042);
 	transform: perspective(600px) rotate(0deg);
 	transition: all 0.5s ease-in-out;
 }
 
 .about-content div.about-me:hover{
 	transform: perspective(600px) scale(1.02) rotateY(-3deg);
-	background: rgba(0, 0, 0, 0.02);
 }
 
 .about-content div.about-me:hover .abt-title{
@@ -144,12 +130,11 @@
 	margin: 0 auto;
 	padding: 5px 0;
 	letter-spacing: 1px;
-	width: 80%;
-	border-radius: 5px;
-	color: rgb(5, 217, 255);
+	width: 70%;
+	border-radius: 3px;
+	color: rgb(2, 165, 194);
 
-	box-shadow: inset 0px 0px 5px 3px #4bf6ff;
-	text-shadow: -1px -2px  rgb(36, 81, 218);
+	box-shadow:  0px 0px 2px 2px #4bf6ff;
 	background: #eeeeee;
 	margin-bottom: 20px;
 	transition: all 0.5s ease-in-out;
@@ -171,14 +156,14 @@
 	min-width: 280px;
 	width: 100%;
 	border-radius: 5px;
-	border: 2px outset  #03e9f4;
+	border: 1px outset  #2d3838;
+	background: linear-gradient(-180deg,rgb(35, 34, 36),#073042);
 	transform: perspective(600px) rotate(0deg);
 	transition: all 0.5s ease-in-out;
 }
 
 .about-content div.hobbies:hover{
 	transform: perspective(600px) scale(1.02) rotateY(-3deg);
-	background: rgba(0, 0, 0, 0.02);
 }
 
 .about-content div.hobbies:hover .hobbies-title{
@@ -204,13 +189,12 @@
 	margin: 0 auto;
 	padding: 5px 0;
 	letter-spacing: 2px;
-	width: 80%;
-	color: rgb(5, 217, 255);
+	width: 70%;
+	color: rgb(2, 165, 194);
 
-	box-shadow: inset 0px 0px 5px 3px #4bf6ff;
-	text-shadow: -1px -2px  rgb(36, 81, 218);
+	box-shadow:  0px 0px 2px 2px #4bf6ff;
 	background: #eeeeee;
-	border-radius: 5px;
+	border-radius: 3px;
 	margin-bottom: 20px;
 	transition: all 0.5s ease-in-out;
 	text-transform: uppercase;
@@ -276,7 +260,7 @@ main{
 .body-formation{
 	position: relative;
 	margin:0 auto;
-     padding: 50px 0;
+     padding: 30px 0 50px 0;
 	display: flex;
 	flex-direction: column;
      justify-content: center;
@@ -288,14 +272,14 @@ main{
 
 .body-formation .formation-title{
 	color: rgb(6, 218, 255);
-	text-shadow: -1px -2px  rgb(27, 88, 255);
+	text-shadow: -1px -1px  rgb(27, 88, 255);
 	margin: 0 auto;
 	text-align: center;
 	font-weight: bold;
 	font-size: 2.4rem;
 	letter-spacing: 2px;
 	position: relative;
-	margin-bottom: 70px;
+	margin-bottom: 50px;
 	animation: updownforma 0.5s ease infinite;
 	transition: all 0.5s ease-in-out;
 	text-transform: uppercase;
@@ -562,11 +546,14 @@ main{
 }
 
 @media only screen and (max-width: 360px){
+
+	.about{
+		padding: 60px 0 20px 0;
+	}
+
 	.about div.about-content{
 		width: 100%;
-		box-shadow: none;
 		justify-content: center;
-		border: none;
 	}
 
 	.about-content div.infos{
