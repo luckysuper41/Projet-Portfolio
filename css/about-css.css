@@ -566,6 +566,7 @@ main{
 		width: 100%;
 		box-shadow: none;
 		justify-content: center;
+		border: none;
 	}
 
 	.about-content div.infos{
