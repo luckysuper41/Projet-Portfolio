@@ -11,7 +11,6 @@
 	transition: all 0.5s ease-in-out;
 }
 
-
 .about div.about-title{
 	color: rgb(6, 218, 255);
 	text-shadow: -1px -1px  rgb(67, 170, 189);
@@ -265,7 +264,7 @@ main{
 	flex-direction: column;
      justify-content: center;
      align-items: center;
-	min-height: 80vh;
+	min-height: 100vh;
 	width: 100%;
 
 }
@@ -279,20 +278,12 @@ main{
 	font-size: 2.4rem;
 	letter-spacing: 2px;
 	position: relative;
-	margin-bottom: 50px;
-	animation: updownforma 0.5s ease infinite;
+	margin-bottom: 65px;
 	transition: all 0.5s ease-in-out;
 	text-transform: uppercase;
 
 }
-@keyframes updownforma{
-	0%,100%{
-		transform: translateY(4px);
-	}
-	50%{
-		transform: translateY(-4px);
-	}
-}
+
 .body-formation .formation-title:hover{
 	font-size: 2.55rem;
 
@@ -303,11 +294,12 @@ main{
 
 .body-formation .formation{
      position: relative;
-     width: 85%;
+     width: 90%;
      display: grid;
-     grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
-	grid-column-gap: 30px;
-	grid-row-gap: 80px;
+	grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+	grid-template-rows: auto;
+	grid-row-gap: 6rem;
+	grid-column-gap: 2rem;
 	padding: 0;
 	margin: 0;
 	justify-content: center;
@@ -491,11 +483,9 @@ main{
 
 	.about-content div.infos:hover{
 		transform: perspective(600px) scale(1.02) rotateY(0deg);
-		background: rgba(0, 0, 0, 0.02);
 	}
 	.about-content div.about-me:hover{
 		transform: perspective(600px) scale(1.02) rotateY(0deg);
-		background: rgba(0, 0, 0, 0.02);
 	}
 	.about-content div.hobbies:hover{
 		transform: perspective(600px) scale(1.02) rotateY(0deg);

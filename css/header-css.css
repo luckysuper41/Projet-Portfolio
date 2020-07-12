@@ -18,7 +18,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #6649b8,#ee1515) no-repeat;
+  background: linear-gradient(to top, #008aff,#00ffe7);
 }
 
 body{
@@ -45,6 +45,7 @@ header.header-nav{
   align-items: center;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  z-index: 1;
 }
 
 .banner{
@@ -52,12 +53,10 @@ header.header-nav{
   width: 100%;
   min-height: 100vh;
   padding: 50px;
-  background: #000;
   display: flex;
   align-items: center;
   overflow: hidden;
   transition: all 0.5s ease-in-out;
-  z-index: 2;
   background: linear-gradient(0deg,#073042, #000 );
 }
 

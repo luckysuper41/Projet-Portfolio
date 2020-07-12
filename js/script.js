@@ -47,7 +47,7 @@ buttons_eau.forEach(btn => {
      
 $(document).ready(function() {
 
-     $('#navigation a,.sidebar a').click(function(event) {
+     $('#navigation a,.sidebar a,.loader a').click(function(event) {
      event.preventDefault();
      
      part = $(this).attr('href');
