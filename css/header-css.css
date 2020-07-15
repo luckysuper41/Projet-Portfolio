@@ -1,11 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varta:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
 
-*{
-  box-sizing: border-box;
-  font-family: "montserrat", sans-serif;
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
+
+
+
+:root{
+     --color-is-1: #000000ff;
+     --color-is-2: #073042ff;
+     --color-is-3: #03e9f4ff;
+     --color-is-4: #413f94ff;
+     --color-is-5: #499f68ff;
+     --color-is-6: #4a77ffff;
 }
 
 
@@ -21,20 +29,13 @@ body::-webkit-scrollbar-thumb {
   background: linear-gradient(to top, #008aff,#00ffe7);
 }
 
-body{
-  margin: 0;
-  padding: 0;
-  background: #000;
-  color: #fff;
-}
-
 
 /*header*/
 header.header-nav{
   position: fixed;
   top: 0;
   left: 0;
-  background: #000;
+  background: var(--color-is-1);
   min-height: 6vh;
   width: 100%;
   display: flex;
@@ -45,7 +46,7 @@ header.header-nav{
   align-items: center;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  z-index: 1;
+  z-index: 9999;
 }
 
 .banner{
@@ -57,7 +58,7 @@ header.header-nav{
   align-items: center;
   overflow: hidden;
   transition: all 0.5s ease-in-out;
-  background: linear-gradient(0deg,#073042, #000 );
+  background: linear-gradient(0deg,var(--color-is-2), var(--color-is-1) );
 }
 
 
@@ -110,13 +111,14 @@ header .logo:hover span{
   text-decoration: none;
   display: flex;
   position: relative;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
   line-height: 1.2rem;
   opacity: 0.9;
   text-transform: uppercase;
   padding: 7px 0;
+  letter-spacing: 2px;
 
   transition: all 0.2s ease-in-out;
 }
@@ -247,7 +249,7 @@ header .logo:hover span{
 }
 
 .wrapper-header .sidebar header span{
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #fff;
   line-height: 60px;
   letter-spacing: 0.4ch;
@@ -278,7 +280,7 @@ header .logo:hover span{
 .wrapper-header .sidebar ul a span{
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   transition: all 0.5s ease-in-out;
   font-weight: bold;
 }
@@ -518,16 +520,19 @@ header .logo:hover span{
   margin: 10px 0;
 }
 
+
+
 .sci li a:hover{
   background: #fff;
 }
 
-.sci li a img{
-  max-width: 20px;
-  filter: invert(1);
-  mix-blend-mode: difference;
+.sci li a i{
+color: #fff;
+font-size: 22px;
 }
-
+.sci li a:hover i{
+color: #000;
+}
 
 
 /*Media header*/

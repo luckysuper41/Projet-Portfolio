@@ -1,14 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varta:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+
+
+
+:root{
+     --color-is-1: #000000ff;
+     --color-is-2: #073042ff;
+     --color-is-3: #03e9f4ff;
+     --color-is-4: #413f94ff;
+     --color-is-5: #499f68ff;
+     --color-is-6: #4a77ffff;
+}
+
 
 /*About*/
 
 .about{
-	padding: 60px 0;
 	margin: 0 auto;
-	background: linear-gradient(0deg, #000,#073042 );
+	background: linear-gradient(0deg, var(--color-is-1) ,var(--color-is-2) );
 	position: relative;
 	width: 100%;
 	overflow: hidden;
 	transition: all 0.5s ease-in-out;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+
 }
 
 .about div.about-title{
@@ -17,17 +40,17 @@
 	margin: 0 auto;
 	text-align: center;
 	font-weight: bold;
-	font-size: 2.5rem;
+	font-size: 2.4rem;
 	letter-spacing: 2px;
 	position: relative;
-	margin: 30px 0;
+	margin: 30px 0 60px 0;
 	text-transform: uppercase;
 	transition: all 0.5s ease-in-out;
 }
 
 
 .about div.about-title:hover{
-	font-size: 2.6rem;
+	font-size: 2.5rem;
 }
 
 .about div.about-content{
@@ -39,9 +62,9 @@
 		'infos infos infos skill skill skill';
 	width: 70%;
 	margin: 0 auto;
-	padding: 30px;
 	border-radius: 5px;
 	transition: all 0.5s ease-in-out;
+	
 }
 
 
@@ -54,8 +77,8 @@
 	
 	position: relative;
 	border-radius: 5px;
-	border: 1px outset  #2d3838;
-	background: linear-gradient(180deg,rgb(35, 34, 36),#073042);
+	border: 2px outset  #2d3838;
+	background: linear-gradient(0deg,var(--color-is-2),var(--color-is-6),var(--color-is-4));
 	transform: perspective(600px) rotate(0deg);
 	transition: all 0.5s ease-in-out;
 }
@@ -82,17 +105,24 @@
 .infos div.content-item{
 	margin-left: 15px;
 	margin-top: 40px;
+	text-align: left;
+	
+
 }
 
 .infos div.content-item .item-text{
 	font-size: 1.1rem;
 	line-height: 2rem;
 	color: #fff;
+	font-family: 'Varta', sans-serif;
+	letter-spacing: 0.5px;
 }
 
 .infos div.content-item .item-text span{
 	font-size: 1.2rem;
 	font-weight: bold;
+	font-family: 'Varta', sans-serif;
+	letter-spacing: 1px;
 }
 
 
@@ -104,8 +134,8 @@
 	min-width: 300px;
 	width: 100%;
 	border-radius: 5px;
-	border: 1px outset  #2d3838;
-	background: linear-gradient(-180deg,rgb(35, 34, 36),#073042);
+	border: 2px outset  #2d3838;
+	background: linear-gradient(0deg,var(--color-is-2),var(--color-is-6),var(--color-is-4));
 	transform: perspective(600px) rotate(0deg);
 	transition: all 0.5s ease-in-out;
 }
@@ -115,7 +145,6 @@
 }
 
 .about-content div.about-me:hover .abt-title{
-	text-shadow: -1px -1px  rgb(36, 81, 218);
 	transform: scale(1.05);
 }
 
@@ -130,10 +159,9 @@
 	padding: 5px 0;
 	letter-spacing: 1px;
 	width: 70%;
-	border-radius: 3px;
-	color: rgb(2, 165, 194);
-
-	box-shadow:  0px 0px 2px 2px #4bf6ff;
+	border-radius: 20px;
+	color: var(--color-is-2);
+	box-shadow:  0px 0px 2px 2px var(--color-is-2);
 	background: #eeeeee;
 	margin-bottom: 20px;
 	transition: all 0.5s ease-in-out;
@@ -141,10 +169,12 @@
 }
 
 .about-content div.about-me .abtme-content{
-	font-size: 1rem;
+	font-size: 1.1rem;
 	line-height: 1.5rem;
 	color: #fff;
 	text-align: justify;
+	font-family: 'Varta', sans-serif;
+	letter-spacing: 0.5px;
 }
 
 .about-content div.hobbies{
@@ -155,8 +185,8 @@
 	min-width: 280px;
 	width: 100%;
 	border-radius: 5px;
-	border: 1px outset  #2d3838;
-	background: linear-gradient(-180deg,rgb(35, 34, 36),#073042);
+	border: 2px outset  #2d3838;
+	background: linear-gradient(0deg,var(--color-is-2),var(--color-is-6),var(--color-is-4));
 	transform: perspective(600px) rotate(0deg);
 	transition: all 0.5s ease-in-out;
 }
@@ -167,7 +197,6 @@
 
 .about-content div.hobbies:hover .hobbies-title{
 	transform:scale(1.05);
-	text-shadow: -1px -1px  rgb(36, 81, 218);
 }
 .about-content div.hobbies .hobbies-content{
 	position: relative;
@@ -189,11 +218,10 @@
 	padding: 5px 0;
 	letter-spacing: 2px;
 	width: 70%;
-	color: rgb(2, 165, 194);
-
-	box-shadow:  0px 0px 2px 2px #4bf6ff;
+	color: var(--color-is-2);
+	box-shadow:  0px 0px 2px 2px var(--color-is-2);
 	background: #eeeeee;
-	border-radius: 3px;
+	border-radius: 20px;
 	margin-bottom: 20px;
 	transition: all 0.5s ease-in-out;
 	text-transform: uppercase;
@@ -229,12 +257,12 @@
 
 main{
 	position: absolute;
-	background: rgb(125, 217, 233);
+	background: rgb(72, 227, 255);
 	transform: translate(-50%,-50%);
 	pointer-events: none;
 	border-radius: 50%;
-	animation: animate 1s linear infinite;
-   }
+	animation: animate 0.8s linear infinite;
+}
    
 @keyframes animate{
 0%{
@@ -243,8 +271,8 @@ main{
 	opacity: 0.5;
 }
 100%{
-	width: 500px;
-	height: 500px;
+	width: 1000px;
+	height: 1000px;
 	opacity: 0;
 }
 }
@@ -259,13 +287,14 @@ main{
 .body-formation{
 	position: relative;
 	margin:0 auto;
-     padding: 30px 0 50px 0;
+     padding: 60px 0;
 	display: flex;
 	flex-direction: column;
      justify-content: center;
      align-items: center;
 	min-height: 100vh;
 	width: 100%;
+	z-index: 2;
 
 }
 
@@ -278,19 +307,16 @@ main{
 	font-size: 2.4rem;
 	letter-spacing: 2px;
 	position: relative;
-	margin-bottom: 65px;
+	margin: 30px 0 60px 0;
 	transition: all 0.5s ease-in-out;
 	text-transform: uppercase;
 
 }
 
 .body-formation .formation-title:hover{
-	font-size: 2.55rem;
+	font-size: 2.5rem;
 
 }
-
-
-
 
 .body-formation .formation{
      position: relative;
@@ -326,28 +352,28 @@ main{
      background: url(../img/about/qnhon.jpeg);
      background-position: center;
      background-size: cover;
-     box-shadow: inset 0px -150px 200px #000000, inset 0px 0px 50px #000000;
+     box-shadow: inset 0px -70px 200px #000000, inset 0px 0px 50px #000000;
 
 }
 .formation .box:nth-child(2):hover{
      background: url(../img/about/hue.jpeg);
      background-position: center;
      background-size: cover;
-     box-shadow: inset 0px -150px 200px #000000, inset 0px 0px 50px #000000;
+     box-shadow: inset 0px -70px 200px #000000, inset 0px 0px 50px #000000;
 
 }
 .formation .box:nth-child(3):hover{
      background: url(../img/about/blois.jpeg);
      background-position: center;
      background-size: cover;
-     box-shadow: inset 0px -150px 200px #000000, inset 0px 0px 50px #000000;
+     box-shadow: inset 0px -70px 200px #000000, inset 0px 0px 50px #000000;
 
 }
 .formation .box:nth-child(4):hover{
      background: url(../img/about/paris.jpeg);
      background-position: center;
      background-size: cover;
-     box-shadow: inset 0px -150px 200px #000000, inset 0px 0px 50px #000000;
+     box-shadow: inset 0px -70px 200px #000000, inset 0px 0px 50px #000000;
 
 }
 
@@ -394,7 +420,8 @@ main{
 }
 
 .formation .content h2{
-     position: absolute;
+	position: absolute;
+	font-family: 'Lobster Two', cursive, sans-serif;
      top: 0;
      right: 20px;
      margin: 0;
@@ -403,7 +430,8 @@ main{
 	text-shadow: -1px -2px  rgb(36, 206, 218);
      color: rgba(29, 255, 206, 0.5);
      transition: 0.5s;
-     min-height: 100px;
+	min-height: 100px;
+	transition: all 0.2s ease-in-out;
 }
 
 .box:hover .content h2{
@@ -413,46 +441,48 @@ main{
 
 .box .content h3{
      position: absolute;
-     min-height: 50px;
+	min-height: 50px;
+	font-family: "Oswald", Helvetica, Arial, sans-serif;
+	letter-spacing: 2px;
      top: 45%;
      left: 0%;
      width: 100%;
      text-align: center;
      margin:  0 0 10px;
      padding: 0;
-     font-size: 1.3rem;
+     font-size: 1.4rem;
      font-weight: 600;
      color: rgb(36, 206, 218);
      transform: translateY(0);
-     transition: all 0.5s ease-in-out;
+     transition: all 0.3s ease-in-out;
 }
 
 .box:hover .content h3{
-	color: #fff;
+	color: rgb(255, 255, 255);
      position: relative;
      transform: translateY(10px);
-     transition: all 1s ease-in-out;
+     transition: all 0.5s ease-in-out;
 }
 
 .box .content p{  
-     justify-content: flex-end;
+	justify-content: center;
      margin:  0;
      padding: 0;
-     font-size: 1.1rem;
+     font-size: 1.3rem;
      line-height: 1.5rem;
-     color: #fff;
+     color: rgb(255, 255, 255);
      opacity: 0;
      visibility: hidden;
      transition: all 0.5s ease-in-out;
 	min-height: 220px;
 	text-align: center;
-
+	font-family: 'Varta', sans-serif;
+	letter-spacing: 0.5px;
 }
 
 
 
 .box:hover .content p{
-     color: #fff;
      opacity: 1;
      visibility: visible;
 }
@@ -515,9 +545,6 @@ main{
 }
 
 @media only screen and (max-width: 768px){
-	.about div.about-content{
-		width: 80%;
-	}
 
 	.about-content div.infos img{
 		width: 200px;
@@ -542,7 +569,7 @@ main{
 	}
 
 	.about div.about-content{
-		width: 100%;
+		margin: 0 auto;
 		justify-content: center;
 	}
 
@@ -582,11 +609,11 @@ main{
 
 	
 	.about div.about-title{
-		font-size: 1.7rem;
+		font-size: 2.4rem;
 	}
 
 	.about div.about-title:hover{
-		font-size: 1.8rem;
+		font-size: 2.5rem;
 	}
 
 	.about-content div.about-me .abt-title{

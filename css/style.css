@@ -1,7 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varta:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
 
+
+
+
+:root{
+     --color-is-1: #000000ff;
+     --color-is-2: #073042ff;
+     --color-is-3: #03e9f4ff;
+     --color-is-4: #413f94ff;
+     --color-is-5: #499f68ff;
+     --color-is-6: #4a77ffff;
+}
 
 *{
   box-sizing: border-box;
@@ -10,6 +23,9 @@
   padding: 0;
   font-size: 14px;
 }
+
+   
+
 
 body{
 	background: #060c21;
@@ -22,197 +38,3 @@ body{
 	max-width: 100%;
 	z-index: 1;
 }
-
-/*Skill*/
-
-.skill{
-	position: relative;
-	margin:0 auto;
-     padding: 30px 0 50px 0;
-	min-height: 70vh;
-	width: 100%;
-
-}
-
-.skill-title{
-	position: relative;
-	color: rgb(6, 218, 255);
-	text-shadow: -1px -1px  rgb(27, 88, 255);
-	margin: 0 auto;
-	text-align: center;
-	font-weight: bold;
-	font-size: 2.4rem;
-	letter-spacing: 2px;
-	position: relative;
-	margin-bottom: 65px;
-	transition: all 0.5s ease-in-out;
-	text-transform: uppercase;
-}
-
-.skill-content{
-	position: relative;
-	width: 80%;
-	display: grid;
-     grid-template-columns: repeat(auto-fit , minmax(210px,1fr));
-	grid-column-gap: 1rem;
-	grid-row-gap: 3rem;
-	justify-content: center;
-	align-items: center;
-	margin: 0 auto;
-}
-
-.skill-item{
-	position: relative;
-	overflow: hidden;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding-top: 20px;
-	transition: all 0.5s ease-in-out;
-}
-
-.skill-item .taux{
-	position: relative;
-	width: 150px;
-	height: 150px;
-	background: #fff;
-	border-radius: 50%;
-	display: flex;
-	text-align: center;
-	justify-content: center;
-	align-items: center;
-	margin: 0 auto;
-}
-
-.skill-item:nth-child(1) .taux::before{
-	content: '';
-	position: absolute;
-	width: 170px;
-	height: 170px;
-	border-radius: 50%;
-	z-index: -1;
-	background: conic-gradient(
-		#55b7a4 0%,
-		#4ca493 80%,
-		rgb(119, 109, 109) 80%,
-		rgb(119, 109, 109) 100%
-	);
-	animation: animatee 3s linear infinite;
-}
-.skill-item:nth-child(2) .taux::before{
-	content: '';
-	position: absolute;
-	width: 170px;
-	height: 170px;
-	border-radius: 50%;
-	z-index: -1;
-	background: conic-gradient(
-		#55b7a4 0%,
-		#4ca493 80%,
-		rgb(119, 109, 109) 80%,
-		rgb(119, 109, 109) 100%
-	);
-	animation: animatee 3s linear infinite;
-}
-
-.skill-item:nth-child(3) .taux::before{
-	content: '';
-	position: absolute;
-	width: 170px;
-	height: 170px;
-	border-radius: 50%;
-	z-index: -1;
-	background: conic-gradient(
-		#55b7a4 0%,
-		#4ca493 20%,
-		rgb(119, 109, 109) 20%,
-		rgb(119, 109, 109) 100%
-	);
-	animation: animatee 3s linear infinite;
-}
-
-.skill-item:nth-child(4) .taux::before{
-	content: '';
-	position: absolute;
-	width: 170px;
-	height: 170px;
-	border-radius: 50%;
-	z-index: -1;
-	background: conic-gradient(
-		#55b7a4 0%,
-		#4ca493 20%,
-		rgb(119, 109, 109) 20%,
-		rgb(119, 109, 109) 100%
-	);
-	animation: animatee 3s linear infinite;
-}
-
-.skill-item:nth-child(5) .taux::before{
-	content: '';
-	position: absolute;
-	width: 170px;
-	height: 170px;
-	border-radius: 50%;
-	z-index: -1;
-	background: conic-gradient(
-		#55b7a4 0%,
-		#4ca493 20%,
-		rgb(119, 109, 109) 20%,
-		rgb(119, 109, 109) 100%
-	);
-	animation: animatee 3s linear infinite;
-}
-
-@keyframes animatee{
-0%,100%{
-	filter:  hue-rotate(0deg);
-}
-50%{
-	filter: hue-rotate(360deg);
-}
-}
-
-
-.skill-item .taux span{
-	font-size: 2rem;
-	font-weight: bold;
-	font-style: italic;
-	color: rgb(143, 140, 140);
-	text-shadow: rgb(129, 128, 128) -1px 1px;
-	font-family: 'Lobster Two', cursive, sans-serif;
-	transition: all 0.5s ease-in-out;
-}
-
-.skill-item .content{
-	color: #fff;
-	display: flex;
-	text-align: center;
-	justify-content: center;
-	align-items: center;
-	margin-top: 20px;
-	
-}
-
-.skill-item .content span{
-	font-size: 1.5rem;
-	font-family: "Oswald", Helvetica, Arial, sans-serif;
-	transition: all 0.5s ease-in-out;
-	font-weight: bold;
-}
-   
-.skill-item:hover .taux span{
-	font-size: 2.2rem;
-	color: #000;
-	text-shadow: #000 -1px 1px;
-}
-
-.skill-item:hover .content span{
-	font-size: 1.6rem;
-}
-
-.skill-item:hover{
-	transform: scale(1.1);
-}
-  
