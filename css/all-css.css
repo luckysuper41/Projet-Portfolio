@@ -1085,28 +1085,28 @@ main{
      background: url(../img/about/qnhon.jpeg);
      background-position: center;
      background-size: cover;
-     box-shadow: inset 0px -70px 200px #000000, inset 0px 0px 50px #000000;
+     box-shadow: inset 0px 0px 500px #000000, inset 0px 0px 500px #000000;
 
 }
 .formation .box:nth-child(2):hover{
      background: url(../img/about/hue.jpeg);
      background-position: center;
      background-size: cover;
-     box-shadow: inset 0px -70px 200px #000000, inset 0px 0px 50px #000000;
+     box-shadow: inset 0px 0px 500px #000000, inset 0px 0px 500px #000000;
 
 }
 .formation .box:nth-child(3):hover{
      background: url(../img/about/blois.jpeg);
      background-position: center;
      background-size: cover;
-     box-shadow: inset 0px -70px 200px #000000, inset 0px 0px 50px #000000;
+     box-shadow: inset 0px 0px 500px #000000, inset 0px 0px 500px #000000;
 
 }
 .formation .box:nth-child(4):hover{
      background: url(../img/about/paris.jpeg);
      background-position: center;
      background-size: cover;
-     box-shadow: inset 0px -70px 200px #000000, inset 0px 0px 50px #000000;
+     box-shadow: inset 0px 0px 500px #000000, inset 0px 0px 500px #000000;
 
 }
 
@@ -1203,7 +1203,7 @@ main{
      padding: 0;
      font-size: 1.3rem;
      line-height: 1.5rem;
-     color: rgb(255, 255, 255);
+     color: #fff;
      opacity: 0;
      visibility: hidden;
      transition: all 0.5s ease-in-out;
@@ -1211,6 +1211,7 @@ main{
 	text-align: center;
 	font-family: 'Varta', sans-serif;
 	letter-spacing: 0.5px;
+	pointer-events: none;
 }
 
 
