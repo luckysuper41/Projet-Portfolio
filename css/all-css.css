@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Oswald:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Varta:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
 
 
 
@@ -18,7 +18,8 @@
 
 *{
   box-sizing: border-box;
-  font-family: "montserrat", sans-serif;
+
+  font-family: Satisfy, cursive;
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -99,7 +100,8 @@ body::-webkit-scrollbar {
    header .logo span{
      position: relative;
      left: 0;
-     top: 0;
+	top: 0;
+	font-family: Satisfy, cursive;
      color: #fff;
      font-weight: 700;
      font-size: 2.5rem;
@@ -354,6 +356,7 @@ body::-webkit-scrollbar {
    }
    
    .content h2{
+	font-family: 'montserrat', sans-serif;
      color: #fff;
      font-size: 2.5rem;
      line-height: 4rem;
@@ -361,6 +364,7 @@ body::-webkit-scrollbar {
    }
    
    .content h2 span{
+	font-family: 'montserrat', sans-serif;
      color: #40c3ff;
      font-size: 2.8rem;
    }
@@ -371,6 +375,7 @@ body::-webkit-scrollbar {
    }
    
    .content .animate-text span{
+	font-family: 'montserrat', sans-serif;
      position: relative;
      color: #fff;
      display: inline-block;
@@ -402,7 +407,8 @@ body::-webkit-scrollbar {
      font-weight: 500;
      text-align: center;
      font-weight: 600;
-     border-radius: 2px;
+	border-radius: 2px;
+	font-family: "montserrat", sans-serif;
      transition: all 0.2s ease-in-out;
    }
    
@@ -2058,7 +2064,7 @@ main{
 }
 
 .cm-content{
-	font-size: 1rem;
+	font-size: 1.1rem;
 	line-height: 1.7rem;
 	margin-bottom: -100px;
 	color: #000;
@@ -2452,7 +2458,8 @@ footer{
      width: 100%;
      justify-content: center;
      align-items: center;
-     background: var(--color-is-1);
+	background: var(--color-is-1);
+	
    }
    footer .footer-content{
      text-align: center;
@@ -2462,10 +2469,12 @@ footer{
    footer .footer-content .f-content1{
      font-weight: bold;
      font-size: 1.1rem;
-     padding-bottom: 10px;
+	padding-bottom: 10px;
+	font-family: 'montserrat', sans-serif;
    }
    footer .footer-content .f-content2{
-     font-size: 0.8rem;
+	font-size: 0.8rem;
+	font-family: 'montserrat', sans-serif;
    }
    
    /*back to top*/
