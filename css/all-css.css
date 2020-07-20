@@ -9,11 +9,12 @@
 
 :root{
      --color-is-1: #000000ff;
-     --color-is-2: #073042ff;
+     --color-is-2: rgb(13, 86, 117);
      --color-is-3: #03e9f4ff;
      --color-is-4: #413f94ff;
      --color-is-5: #499f68ff;
-     --color-is-6: #4a77ffff;
+	--color-is-6: #4a77ffff;
+	--color-is-bk:rgb(35, 35, 36);
 }
 
 *{
@@ -28,7 +29,7 @@
 
 
 body{
-	background: #000000;
+	background: var(--color-is-bk);
 	color: #fff;
 	padding: 0;
 	margin: 0;
@@ -759,7 +760,7 @@ body::-webkit-scrollbar {
 
 .about{
 	margin: 0 auto;
-	background: linear-gradient(0deg, var(--color-is-1) ,var(--color-is-2) );
+	background: linear-gradient(0deg, var(--color-is-bk) ,var(--color-is-2) );
 	position: relative;
 	width: 100%;
 	overflow: hidden;
@@ -784,7 +785,7 @@ body::-webkit-scrollbar {
 	margin: 30px 0 60px 0;
 	text-transform: uppercase;
 	transition: all 0.5s ease-in-out;
-	font-family: Satisfy, cursive;
+	font-family: 'Playfair Display', serif;
 }
 
 
@@ -816,7 +817,7 @@ body::-webkit-scrollbar {
 	position: relative;
 	border-radius: 5px;
 	border: 2px outset  #2d3838;
-	background: linear-gradient(0deg,var(--color-is-2),var(--color-is-6),var(--color-is-4));
+	background: radial-gradient( var(--color-is-2),var(--color-is-4));
 	transform: perspective(600px) rotate(0deg);
 	transition: all 0.5s ease-in-out;
 }
@@ -852,14 +853,14 @@ body::-webkit-scrollbar {
 	font-size: 1.1rem;
 	line-height: 2rem;
 	color: #fff;
-	font-family: 'Varta', sans-serif;
+	font-family: "Oswald", Helvetica, Arial, sans-serif;
 	letter-spacing: 0.5px;
 }
 
 .infos div.content-item .item-text span{
 	font-size: 1.2rem;
 	font-weight: bold;
-	font-family: 'Varta', sans-serif;
+	font-family: "Oswald", Helvetica, Arial, sans-serif;
 	letter-spacing: 1px;
 }
 
@@ -873,7 +874,7 @@ body::-webkit-scrollbar {
 	width: 100%;
 	border-radius: 5px;
 	border: 2px outset  #2d3838;
-	background: linear-gradient(0deg,var(--color-is-2),var(--color-is-6),var(--color-is-4));
+	background: radial-gradient( var(--color-is-2),var(--color-is-4));
 	transform: perspective(600px) rotate(0deg);
 	transition: all 0.5s ease-in-out;
 }
@@ -925,7 +926,7 @@ body::-webkit-scrollbar {
 	width: 100%;
 	border-radius: 5px;
 	border: 2px outset  #2d3838;
-	background: linear-gradient(0deg,var(--color-is-2),var(--color-is-6),var(--color-is-4));
+	background: radial-gradient( var(--color-is-2),var(--color-is-4));
 	transform: perspective(600px) rotate(0deg);
 	transition: all 0.5s ease-in-out;
 }
@@ -1050,8 +1051,8 @@ main{
 	position: relative;
 	margin: 30px 0 60px 0;
 	transition: all 0.5s ease-in-out;
-	font-family: Satisfy, cursive;
 	text-transform: uppercase;
+	font-family: 'Playfair Display', serif;
 
 }
 
@@ -1210,7 +1211,7 @@ main{
      margin:  0;
      padding: 0;
      font-size: 1.3rem;
-     line-height: 1.5rem;
+     line-height: 1.4rem;
      color: #fff;
      opacity: 0;
      visibility: hidden;
@@ -1388,7 +1389,7 @@ main{
 	margin:0 auto;
 	width: 100%;
 	z-index: 5;
-	background: linear-gradient(0deg,var(--color-is-4),var(--color-is-1));
+	background: linear-gradient(0deg,var(--color-is-bk), var(--color-is-2),var(--color-is-bk)) ;
 	min-height: 100vh;
 	transition: all 0.5s ease-in-out;
 	display: flex;
@@ -1408,9 +1409,9 @@ main{
 	letter-spacing: 2px;
 	position: relative;
 	margin: 30px 0 60px 0;
-	font-family: Satisfy, cursive;
 	transition: all 0.5s ease-in-out;
 	text-transform: uppercase;
+	font-family: 'Playfair Display', serif;
 }
 
 .skill-title:hover{
@@ -1606,7 +1607,7 @@ main{
 	margin:0 auto;
 	min-height: 100vh;
 	width: 100%;
-	background: linear-gradient(0deg, var(--color-is-1), var(--color-is-2), var(--color-is-4) );
+	background: var(--color-is-bk);
      transition: all 0.5s ease-in-out;
      overflow: hidden;
      display: flex;
@@ -1626,9 +1627,9 @@ main{
 	letter-spacing: 2px;
 	position: relative;
 	margin: 30px 0 60px 0;
-	font-family: Satisfy, cursive;
 	transition: all 0.5s ease-in-out;
 	text-transform: uppercase;
+	font-family: 'Playfair Display', serif;
 }
 
 .projets-title:hover{
@@ -1768,7 +1769,7 @@ main{
 	margin:0 auto;
 	min-height: 100vh;
 	width: 100%;
-	background: linear-gradient(0deg, var(--color-is-6), var(--color-is-1) );
+	background: linear-gradient(00deg,var(--color-is-bk), var(--color-is-2), var(--color-is-bk) );
 	transition: all 0.5s ease-in-out;
 	display: flex;
 	flex-direction: column;
@@ -1788,8 +1789,8 @@ main{
 	position: relative;
 	margin: 30px 0 60px 0;
 	transition: all 0.5s ease-in-out;
-	font-family: Satisfy, cursive;
 	text-transform: uppercase;
+	font-family: 'Playfair Display', serif;
 }
 
 .contact-title:hover{
