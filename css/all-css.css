@@ -821,6 +821,10 @@ body::-webkit-scrollbar {
 	background: radial-gradient( var(--color-is-2),var(--color-is-4));
 	transform: perspective(600px) rotate(0deg);
 	transition: all 0.5s ease-in-out;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .about-content div.infos:hover{
@@ -833,7 +837,6 @@ body::-webkit-scrollbar {
 
 
 .about-content div.infos img{
-	margin-left: 20px;
 	width: 240px;
 	height: 240px;
 	border-radius: 50%;
@@ -843,11 +846,8 @@ body::-webkit-scrollbar {
 }
 
 .infos div.content-item{
-	margin-left: 15px;
 	margin-top: 40px;
 	text-align: left;
-	
-
 }
 
 .infos div.content-item .item-text{
@@ -1269,10 +1269,10 @@ main{
 	.about-content div.infos{
 		display: grid;
 		grid-template-columns: repeat(2,1fr);
-		justify-content: center;
+		justify-content: end;
 		align-items: center;
 		margin: 0 auto;
-	}
+}
 	
 	.formation .box{
 		min-height: 440px;
@@ -1301,7 +1301,10 @@ main{
 		justify-content: center;
 		align-items: center;
 		padding: 10px 0;
-		min-height: 350px;
+	}
+	.about-content div.infos img{
+		margin: 0 auto;
+		margin-bottom: -20px;
 	}
 
 	.box:hover .content h2{
@@ -1323,9 +1326,9 @@ main{
 
 	.about-content div.infos img{
 		margin: 0 auto;
-		width: 150px;
-		height: 150px;
-		margin-bottom: 10px;
+		width: 170px;
+		height: 170px;
+		margin-bottom: -20px;
 	}
 	
 
