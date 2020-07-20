@@ -265,7 +265,7 @@ body::-webkit-scrollbar {
      transition: all 0.5s ease-in-out;
    }
    
-   .wrapper-header .sidebar header{
+   .wrapper-header .sidebar div{
      height: 63px;
      text-align: left;
      user-select: none;
@@ -274,7 +274,7 @@ body::-webkit-scrollbar {
      overflow: hidden;
    }
    
-   .wrapper-header .sidebar header span{
+   .wrapper-header .sidebar div span{
      font-size: 2rem;
      color: #fff;
      line-height: 60px;
@@ -296,7 +296,8 @@ body::-webkit-scrollbar {
      width: 100%;
      line-height: 5rem;
      padding-left: 40px;
-     box-sizing: border-box;
+	box-sizing: border-box;
+	
      border-top: 1px solid rgba(255, 255, 255, 0.1);
      border-bottom: 1px solid #000;
      transition: all 0.3s ease-in-out;
@@ -338,7 +339,7 @@ body::-webkit-scrollbar {
      right: 9999px;
    }
    
-   .wrapper-header #check:checked ~ .sidebar header span.header-text{
+   .wrapper-header #check:checked ~ .sidebar div span.header-text{
      right: 55px;
    }
    
@@ -664,7 +665,7 @@ body::-webkit-scrollbar {
      }
    }
    
-   @media only screen and (max-width: 360px){
+   @media only screen and (max-width: 380px){
    
      #navigation{
        display: none;

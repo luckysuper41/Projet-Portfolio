@@ -1,6 +1,6 @@
 
 /* About */
-const buttons_eau = document.querySelectorAll('.hobbies-item, #projets-item');
+const buttons_eau = document.querySelectorAll('.hobbies-item, .projets-item');
 buttons_eau.forEach(btn => {
      btn.addEventListener('mouseenter',function(){         
           let ripples = document.createElement('main');
