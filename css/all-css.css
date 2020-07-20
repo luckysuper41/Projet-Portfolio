@@ -18,8 +18,7 @@
 
 *{
   box-sizing: border-box;
-
-  font-family: Satisfy, cursive;
+  font-family: "Oswald", Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -785,6 +784,7 @@ body::-webkit-scrollbar {
 	margin: 30px 0 60px 0;
 	text-transform: uppercase;
 	transition: all 0.5s ease-in-out;
+	font-family: Satisfy, cursive;
 }
 
 
@@ -799,11 +799,11 @@ body::-webkit-scrollbar {
 	grid-template-areas: 
 		'infos infos infos aboutme aboutme aboutme'
 		'infos infos infos skill skill skill';
-	width: 70%;
-	margin: 0 auto;
+	width: 80%;
 	border-radius: 5px;
 	transition: all 0.5s ease-in-out;
-	
+	margin: 0 auto;
+	padding: 0;
 }
 
 
@@ -813,7 +813,6 @@ body::-webkit-scrollbar {
 	min-width: 300px;
 	width: 100%;
 	margin: 0 auto;
-	
 	position: relative;
 	border-radius: 5px;
 	border: 2px outset  #2d3838;
@@ -891,6 +890,7 @@ body::-webkit-scrollbar {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-family: Satisfy, cursive;
 	font-size: 1.6rem;
 	font-weight: bold;
 	text-align: center;
@@ -952,6 +952,7 @@ body::-webkit-scrollbar {
 	align-items: center;
 	font-size: 1.6rem;
 	font-weight: bold;
+	font-family: Satisfy, cursive;
 	text-align: center;
 	margin: 0 auto;
 	padding: 5px 0;
@@ -973,6 +974,7 @@ body::-webkit-scrollbar {
 	font-size: 1.05rem;
 	line-height: 1.5rem;
 	color: #000;
+	font-family: "Oswald", Helvetica, Arial, sans-serif;
 	border: 1px outset #c3c3c3;
 	box-shadow: 3px 3px  rgba(0, 0, 0, 0.4);
 	margin: 0 auto;
@@ -1048,6 +1050,7 @@ main{
 	position: relative;
 	margin: 30px 0 60px 0;
 	transition: all 0.5s ease-in-out;
+	font-family: Satisfy, cursive;
 	text-transform: uppercase;
 
 }
@@ -1204,7 +1207,6 @@ main{
 }
 
 .box .content p{  
-	justify-content: center;
      margin:  0;
      padding: 0;
      font-size: 1.3rem;
@@ -1218,6 +1220,7 @@ main{
 	font-family: 'Varta', sans-serif;
 	letter-spacing: 0.5px;
 	pointer-events: none;
+	text-align: justify;
 }
 
 
@@ -1266,14 +1269,6 @@ main{
 		grid-template-columns: repeat(2,1fr);
 		justify-content: center;
 		align-items: center;
-	}
-
-	.about-content div.infos img{
-		margin: 0 auto;
-		margin-left: 20px;
-	}
-	
-	.infos div.content-item{
 		margin: 0 auto;
 	}
 	
@@ -1291,14 +1286,25 @@ main{
 		height: 200px;
 	}
 	
-	.infos div.content-item{
-		margin: 0 auto;
-		margin-left: 10px;
-	}
 	.formation .box{
 		min-height: 440px;
 		width: 300px;
 
+	}
+}
+@media only screen and (max-width: 650px){
+	.about-content div.infos{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 10px 0;
+		min-height: 350px;
+	}
+
+	.box:hover .content h2{
+		top: -20px;
+	
 	}
 }
 
@@ -1313,15 +1319,6 @@ main{
 		justify-content: center;
 	}
 
-	.about-content div.infos{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 10px 0;
-		min-height: 350px;
-	}
-
 	.about-content div.infos img{
 		margin: 0 auto;
 		width: 150px;
@@ -1329,10 +1326,7 @@ main{
 		margin-bottom: 10px;
 	}
 	
-	.infos div.content-item{
-		margin: 0 auto;
-		padding: 0;
-	}
+
 	.infos div.content-item .item-text{
 		font-size: 1rem;
 		line-height: 2rem;
@@ -1379,6 +1373,10 @@ main{
 		width: 270px;
 
 	}
+	.box:hover .content h2{
+		top: -10px;
+	
+	}
 	
 }
 
@@ -1410,6 +1408,7 @@ main{
 	letter-spacing: 2px;
 	position: relative;
 	margin: 30px 0 60px 0;
+	font-family: Satisfy, cursive;
 	transition: all 0.5s ease-in-out;
 	text-transform: uppercase;
 }
@@ -1420,7 +1419,7 @@ main{
 
 .skill-content{
 	position: relative;
-	width: 80%;
+	width: 90%;
 	display: grid;
      grid-template-columns: repeat(auto-fit , minmax(210px,1fr));
 	grid-column-gap: 1rem;
@@ -1627,6 +1626,7 @@ main{
 	letter-spacing: 2px;
 	position: relative;
 	margin: 30px 0 60px 0;
+	font-family: Satisfy, cursive;
 	transition: all 0.5s ease-in-out;
 	text-transform: uppercase;
 }
@@ -1637,7 +1637,7 @@ main{
 
 .projets-content{
 	position: relative;
-	width: 85%;
+	width: 90%;
 	display: grid;
      grid-template-columns: repeat(auto-fit , minmax(300px,1fr));
 	grid-column-gap: 1rem;
@@ -1663,9 +1663,13 @@ main{
      transition: all 0.3s ease-in-out;
 
 }
+.projets-content .projets-item a{
+	position: relative;
+	text-decoration: none;
+}
 
 .projets-content .projets-item:hover{
-     transform: translateY(-40px);
+     transform: translateY(-30px);
 }
 
 @media only screen and (max-width: 360px){
@@ -1691,7 +1695,6 @@ main{
 .projets-item img{
      width: 274px;
      height: 210px;
-
      box-shadow:  0px 0px 1px 1px var(--color-is-2);
 }
 .projets-item .item-titre{
@@ -1706,7 +1709,7 @@ main{
 .projets-item .item-content{
      display: flex;
      flex-direction: column;
-     width: 80%;
+     width: 100%;
 }
 
 .item-content .outil{
@@ -1725,7 +1728,7 @@ main{
      padding: 0 0 30px 0;
 }
 
-.item-content .link a i{
+.item-content .link i{
      font-size: 1.5rem;
      animation: animateeicon 3s linear infinite;
 }
@@ -1739,7 +1742,7 @@ main{
 }
 }
 
-.projets-item:hover .link a i{
+.projets-item:hover .link i{
      color: blue;
      animation: rotateicon 2s linear infinite;
 }
@@ -1785,6 +1788,7 @@ main{
 	position: relative;
 	margin: 30px 0 60px 0;
 	transition: all 0.5s ease-in-out;
+	font-family: Satisfy, cursive;
 	text-transform: uppercase;
 }
 
@@ -2436,7 +2440,7 @@ button.ghost:focus{
 
 }
 
-@media only screen and (max-width: 360px){
+@media only screen and (max-width: 600px){
 	.contact-content-360{
 
 		display: block;
