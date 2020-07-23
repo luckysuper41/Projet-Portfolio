@@ -1,16 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Oswald:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
 :root{
      --color-is-1: #000000ff;
-     --color-is-2: rgb(13, 86, 117);
-     --color-is-3: #03e9f4ff;
-     --color-is-4: #413f94ff;
-     --color-is-5: #499f68ff;
-	--color-is-6: #4a77ffff;
-	--color-is-bk:rgb(35, 35, 36);
 
 	--mainColor:#15202B;
 	--secondaryColor:#192734;
@@ -103,7 +97,7 @@ body::-webkit-scrollbar {
      position: relative;
      left: 0;
 	top: 0;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Dancing Script', cursive;
      color: #fff;
      font-weight: 500;
      font-size: 2.4rem;
