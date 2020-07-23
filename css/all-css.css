@@ -2470,7 +2470,7 @@ footer{
    }
    
    .scroll-top.active:hover i{
-     color: var(--color-is-5);
+     color: #00ff95;
      transform: scale(0.95);
     }
    
