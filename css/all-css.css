@@ -980,6 +980,7 @@ body::-webkit-scrollbar {
 
 .about-content div.hobbies .hobbies-item i{
 	font-size: 1.2rem;
+	color: #000;
 }
 
 .about-content div.hobbies .hobbies-item:hover{
@@ -1316,7 +1317,7 @@ main{
 	
 	.infos div.content-item .item-text span{
 		font-size: 1.2rem;
-		font-weight: bold;
+
 	}
 
 	.about div.about-content:hover{
@@ -1347,7 +1348,6 @@ main{
 	.about-content div.about-me .abtme-content{
 		font-size: 1rem;
 		line-height: 1.3rem;
-		text-align: justify;
 	}
 
 	.box:hover .content h2{
