@@ -1904,6 +1904,17 @@ main{
 	border-bottom-color: #000;
 }
 
+/*contact alert*/
+
+.alert, .alert-360{
+	color: #000;
+	text-align: center;
+	padding: 10px;
+	background: #79c879;
+	margin-bottom: 25px;
+	display: none;
+}
+
 
 /*Follow*/
 .follow-content{

@@ -76,3 +76,93 @@ function stars(){
    }
    
    stars();
+
+
+
+
+   /*ContactForm*/
+   
+     // Your web app's Firebase configuration
+     var firebaseConfig = {
+     apiKey: "AIzaSyAhxzxY0vR0OMrG2BiPSGt5B4QKXdcVoy0",
+     authDomain: "porfolio261998.firebaseapp.com",
+     databaseURL: "https://porfolio261998.firebaseio.com",
+     projectId: "porfolio261998",
+     storageBucket: "porfolio261998.appspot.com",
+     messagingSenderId: "116779099250",
+     appId: "1:116779099250:web:ed466ea769f4821ef40eeb"
+     };
+     // Initialize Firebase
+     firebase.initializeApp(firebaseConfig);
+     // Reference messages collection
+     var firestore = firebase.firestore();
+     const savedata = firestore.collection("contactData");
+
+     ///////////////////////////
+   document.getElementById('contactForm').addEventListener('submit',submitForm);
+   document.getElementById('contactForm-360').addEventListener('submit',submitForm360);
+
+   function submitForm(e){
+     e.preventDefault();
+     var name =getInputVal('name');
+     var email =getInputVal('email');
+     var message =getInputVal('message');
+     var date = new Date();
+     //save content
+     saveMessage(name,email,message,date);
+
+     //show alert
+     document.querySelector('.alert').style.display = 'block';
+
+     //hide alert after 3s
+     setTimeout(() => {
+          document.querySelector('.alert').style.display = 'none';
+     }, 3000);
+
+     //clear Form
+     document.getElementById('contactForm').reset();
+   }
+
+   function submitForm360(e){
+     e.preventDefault();
+     var name =getInputVal('name-360');
+     var email =getInputVal('email-360');
+     var message =getInputVal('message-360');
+     var date = new Date();
+     
+     //save content
+     saveMessage(name,email,message,date);
+
+     //show alert
+     document.querySelector('.alert-360').style.display = 'block';
+
+     //hide alert after 3s
+     setTimeout(() => {
+          document.querySelector('.alert-360').style.display = 'none';
+     }, 3000);
+
+     //clear Form
+     document.getElementById('contactForm-360').reset();
+   }
+
+   function getInputVal(id){
+        return document.getElementById(id).value;
+   }
+
+   function saveMessage(name,email,message,date){
+        const newMessageRef = savedata.doc();
+        newMessageRef.set({
+             name: name,
+             email: email,
+             message: message,
+             date: date
+        })
+        .then(()=>{
+             console.log('Data Saved')})
+        .catch((error)=>{
+             console.log(error);
+        });
+   }
+
+   //show alert
+   

@@ -286,23 +286,25 @@
       </div>
       <div class="contact-content" id="contact-content">
         <div class="form-container feedback-container">
-          <form >
+          <form id="contactForm">
             <h1>Feedback</h1>
+            <div class="alert">Your message has been sent</div>
             <div class="inputBox">
-              <input type="text" name="name" required="required">
+              <input type="text" name="name" required="required" id="name">
               <span>Your Name</span>
             </div>
             <div class="inputBox">
-              <input type="email" name="email" required="required">
+              <input type="email" name="email" required="required" id="email">
               <span>Your Email</span>
             </div>
             <div class="inputBox">
-              <textarea name="message" required="required"></textarea>
+              <textarea name="message" required="required" id="message"></textarea>
               <span>Your comment or message</span>
             </div>
             <div class="inputButton">
-              <input type="submit" value="Send" name="submit">
+              <input type="submit" value="Send" name="submit" id="submit">
             </div>
+            
             
           </form>
           
@@ -368,23 +370,24 @@
 
       <div class="contact-content-360">
         <div class="form-container-360">
-          <form action="#">
+          <form id="contactForm-360">
             <h1>Send me a message</h1>
             <div class="social-icon">
                 <div><a href="https://www.facebook.com/profile.php?id=100010995906125" target="_blank"><span><i class="fab fa-facebook-f"></i></span></a></div>
                 <div><a href="https://www.linkedin.com/in/nguyen-huynh-dung-818396157/" target="_blank"><span ><i class="fab fa-linkedin-in"></i></span></a></div>
                 <div><a href="https://github.com/luckysuper41" target="_blank"><span ><i class="fab fa-github"></i></span></a></div>
             </div>
+            <div class="alert-360">Your message has been sent</div>
             <div class="inputBox-360">
-              <input type="text" name="fullname" required="required">
+              <input type="text" name="name" required="required" id="name-360">
               <span>Your Name</span>
             </div>
             <div class="inputBox-360">
-              <input type="email" name="email" required="required">
+              <input type="email" name="email" required="required" id="email-360">
               <span>Your Email</span>
             </div>
             <div class="inputBox-360">
-              <textarea name="box-text" required="required"></textarea>
+              <textarea name="message" required="required" id="message-360"></textarea>
               <span>Your message</span>
             </div>
             <div class="inputButton-360">
@@ -412,6 +415,10 @@
 
       <!--JS-->
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>  
     <script src="js/script.js"></script>
 
   </body>
