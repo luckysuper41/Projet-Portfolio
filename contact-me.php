@@ -1,0 +1,27 @@
+<?php
+if(insset($_POST['submit']))
+{
+
+     $name = $_POST['name'];
+     $visitor_email = $_POST['email'];
+     $message = $_POST['message'];
+
+     $email_from = "icey261998@gmail.com";
+
+     $email_subject = "New From Porfolio";
+
+     $email_body = "User Name:" .$name. "\n".
+     "User Email:" .$visitor_email. "\n".
+     "User Message:" .$message. "\n";
+
+     $to = "corneille261998@gmail.com";
+     
+     $headers = "From:" .$email_from "\r\n";
+
+     $headers .= "Reply-To:" .$visitor_email "\r\n";
+
+     mail($to,$email_subject,$email_body,$headers);
+
+     header("Location: homepage.html?mailsend");
+}
+?>
