@@ -36,6 +36,7 @@ body{
 	min-width: 360px;
 	max-width: 100%;
 	z-index: 1;
+	overflow-x: hidden;
 }
 
 
@@ -769,7 +770,7 @@ body::-webkit-scrollbar {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 100px 0;
+	padding: 100px 0;	
 }
 
 .about div.about-title{
@@ -1084,28 +1085,28 @@ main{
      background: url(../img/about/qnhon.jpeg);
      background-position: center;
      background-size: cover;
-     box-shadow: inset 0px 0px 500px #000000, inset 0px 0px 500px #000000;
+     box-shadow: inset 0px 0px 100px #000000, inset 0px 0px 500px #000000;
 
 }
 .formation .box:nth-child(2):hover{
      background: url(../img/about/hue.jpeg);
      background-position: center;
      background-size: cover;
-     box-shadow: inset 0px 0px 500px #000000, inset 0px 0px 500px #000000;
+     box-shadow: inset 0px 0px 100px #000000, inset 0px 0px 500px #000000;
 
 }
 .formation .box:nth-child(3):hover{
      background: url(../img/about/blois.jpeg);
      background-position: center;
      background-size: cover;
-     box-shadow: inset 0px 0px 500px #000000, inset 0px 0px 500px #000000;
+     box-shadow: inset 0px 0px 100px #000000, inset 0px 0px 500px #000000;
 
 }
 .formation .box:nth-child(4):hover{
      background: url(../img/about/paris.jpeg);
      background-position: center;
      background-size: cover;
-     box-shadow: inset 0px 0px 500px #000000, inset 0px 0px 500px #000000;
+     box-shadow: inset 0px 0px 100px #000000, inset 0px 0px 300px #000000;
 
 }
 
@@ -1252,7 +1253,9 @@ main{
 	.about-content div.hobbies:hover{
 		transform: perspective(600px) scale(1.02) rotateY(0deg);
 	}
-
+	.about-content div.hobbies .hobbies-item:hover{
+		transform: perspective(600px) scale(1.05) rotateY(0deg);
+	}
 	.about-content div.infos{
 		display: grid;
 		grid-template-columns: repeat(2,1fr);
@@ -1300,6 +1303,16 @@ main{
 	.about div.about-content{
 		margin: 0 auto;
 		justify-content: center;
+	}
+
+	.about-content div.infos:hover{
+		transform: none;
+	}
+	.about-content div.about-me:hover{
+		transform: none;
+	}
+	.about-content div.hobbies:hover{
+		transform: none;
 	}
 
 	.about-content div.infos img{
@@ -1373,7 +1386,6 @@ main{
 	align-items: center;
 	border-top: 1px solid var(--borderColor);
 	border-bottom: 1px solid var(--borderColor);
-
 }
 
 .skill-title{
@@ -1736,6 +1748,7 @@ main{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
 }
 
 .contact-title{

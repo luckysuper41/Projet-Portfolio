@@ -18,6 +18,7 @@
     -->
     
     <link rel="stylesheet" href="css/all-css.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Portfolio - Huynh Dung NGUYEN</title>
   </head>
 
@@ -99,7 +100,7 @@
 
 
     <!--ABOUT-->
-    <section class="about" id="About">
+    <section class="about" id="About" data-aos="fade">
       <div class="about-title">My Intro</div>
 
       <div class="about-content">
@@ -145,7 +146,7 @@
         </div>
     </section>
 
-    <section class="body-formation">
+    <section class="body-formation" data-aos="zoom-in-up">
       <div class="formation-title">formation</div>
 
       <div class="formation">
@@ -183,7 +184,7 @@
 
 
     <!--SKILL-->
-    <section class="skill" id="Skills">
+    <section class="skill" id="Skills" data-aos="slide-left">
       <div class="skill-title">
         My skills
       </div>
@@ -224,7 +225,7 @@
 
     <!--PROJETS-->
 
-    <section class="projets" id="Projets">
+    <section class="projets" id="Projets" data-aos="slide-right">
       <div class="projets-title">
         my projects
       </div>
@@ -280,7 +281,7 @@
 
     <!--CONTACT-->
 
-    <section class="contact" id="Contact">
+    <section class="contact" id="Contact" data-aos="fade">
       <div class="contact-title">
         contact me
       </div>
@@ -420,6 +421,14 @@
     <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>  
     <script src="js/script.js"></script>
+
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000
+      });
+    </script>
 
   </body>
 
