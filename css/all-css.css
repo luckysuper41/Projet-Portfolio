@@ -34,7 +34,6 @@ body{
 	width: 100%;
 	height: 100%;
 	min-width: 360px;
-	max-width: 100%;
 	z-index: 1;
 	overflow-x: hidden;
 }
@@ -770,7 +769,7 @@ body::-webkit-scrollbar {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 100px 0;	
+	padding: 150px 0;	
 }
 
 .about div.about-title{
@@ -1021,7 +1020,7 @@ main{
 .body-formation{
 	position: relative;
 	margin:0 auto;
-	padding: 100px 0;
+	padding: 150px 0;
 	display: flex;
 	flex-direction: column;
      justify-content: center;
@@ -1029,7 +1028,6 @@ main{
 	width: 100%;
 	z-index: 2;
 	border-top: 1px solid var(--borderColor);
-	border-bottom: 1px solid var(--borderColor);
 }
 
 .body-formation .formation-title{
@@ -1376,7 +1374,7 @@ main{
 	position: relative;
 	margin:0 auto;
 	width: 100%;
-	padding: 100px 0;
+	padding: 150px 0;
 	z-index: 5;
 	background: var(--mainColor) ;
 	transition: all 0.5s ease-in-out;
@@ -1385,7 +1383,6 @@ main{
 	justify-content: center;
 	align-items: center;
 	border-top: 1px solid var(--borderColor);
-	border-bottom: 1px solid var(--borderColor);
 }
 
 .skill-title{
@@ -1594,14 +1591,13 @@ main{
 	width: 100%;
 	background: var(--mainColor);
 	transition: all 0.5s ease-in-out;
-	padding: 100px 0;
+	padding: 150px 0;
      overflow: hidden;
      display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	border-top: 1px solid var(--borderColor);
-	border-bottom: 1px solid var(--borderColor);
 }
 
 .projets-title{
@@ -1740,7 +1736,7 @@ main{
 .contact{
 	position: relative;
 	margin:0 auto;
-	padding: 100px 0;
+	padding: 150px 0;
 	width: 100%;
 	background: var(--mainColor);
 	transition: all 0.5s ease-in-out;
@@ -1748,7 +1744,7 @@ main{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-
+	border-top: 1px solid var(--borderColor);
 }
 
 .contact-title{
