@@ -825,7 +825,7 @@ body::-webkit-scrollbar {
 }
 
 .about-content div.infos:hover{
-	transform: perspective(600px) scale(1.02) rotateY(2deg);
+	transform: perspective(1000px) scale(1.01) rotateY(1deg);
 }
 
 .about-content div.infos:hover img{
@@ -877,7 +877,7 @@ body::-webkit-scrollbar {
 }
 
 .about-content div.about-me:hover{
-	transform: perspective(600px) scale(1.02) rotateY(-2deg);
+	transform: perspective(1000px) scale(1.01) rotateY(-1deg);
 }
 
 
@@ -902,12 +902,32 @@ body::-webkit-scrollbar {
 }
 
 .about-content div.about-me .abtme-content{
-	font-size: 1rem;
+	font-size: 1.1rem;
 	line-height: 1.5rem;
 	color: var(--mainText);
 	text-align: left;
 	font-family: 'Roboto', sans-serif;
 	letter-spacing: 1px;
+}
+.about-content div.about-me .abtme-CV{
+	text-align: center;
+	margin-top: 20px;
+}
+
+.about-content div.about-me .abtme-CV a{
+	font-size: 1.3rem;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+	background: var(--mainColor);
+	padding: 5px 15px;
+	border-radius: 5px;
+	border: 1px solid #eee;
+	transition: 0.2s;
+}
+.about-content div.about-me .abtme-CV a:hover{
+	padding: 7px 17px;
 }
 
 .about-content div.hobbies{
@@ -925,7 +945,7 @@ body::-webkit-scrollbar {
 }
 
 .about-content div.hobbies:hover{
-	transform: perspective(600px) scale(1.02) rotateY(-2deg);
+	transform: perspective(1000px) scale(1.01) rotateY(-1deg);
 }
 
 
@@ -962,7 +982,7 @@ body::-webkit-scrollbar {
 	overflow: hidden;
 	display: block;
 	position: relative;
-	font-size: 1.05rem;
+	font-size: 1.1rem;
 	line-height: 1.5rem;
 	color: #000;
 	font-family: "Oswald", Helvetica, Arial, sans-serif;
@@ -984,7 +1004,7 @@ body::-webkit-scrollbar {
 }
 
 .about-content div.hobbies .hobbies-item:hover{
-	transform: perspective(600px) scale(1.1) rotateY(10deg);
+	transform: perspective(800px) scale(1.1) rotateY(10deg);
 }
 
 
@@ -1446,7 +1466,23 @@ main{
      background: rgba(0,0,0,0.05);
 	pointer-events: none;
 }
-.skill-item:nth-child(1) .taux::before{
+
+.skill-item .taux::before{
+	content: '';
+	position: absolute;
+	width: 170px;
+	height: 170px;
+	border-radius: 50%;
+	z-index: -1;
+	background: conic-gradient(
+		#07eccd 0%,
+		#be2424 50%,
+		#07eccd 100%
+	);
+	animation: animatee 3s linear infinite;
+}
+
+/* .skill-item:nth-child(1) .taux::before{
 	content: '';
 	position: absolute;
 	width: 170px;
@@ -1523,7 +1559,7 @@ main{
 		rgb(119, 109, 109) 100%
 	);
 	animation: animatee 3s linear infinite;
-}
+} */
 
 @keyframes animatee{
 0%,100%{
@@ -1534,8 +1570,28 @@ main{
 }
 }
 
+.skill-item .taux i{
+	font-size: 5rem;
+	transition: all 0.5s ease-in-out;
+}
 
-.skill-item .taux span{
+.skill-item:nth-child(1) .taux i{
+	color: rgb(219, 58, 29);
+}
+.skill-item:nth-child(2) .taux i{
+	color: rgb(55, 111, 233);
+}
+.skill-item:nth-child(3) .taux i{
+	color: rgb(243, 240, 38);
+}
+.skill-item:nth-child(5) .taux i{
+	color: rgb(97, 69, 102);
+}
+.skill-item:nth-child(4) .taux i{
+	color: rgb(73, 171, 216);
+}
+
+/* .skill-item .taux span{
 	font-size: 2rem;
 	font-weight: bold;
 	font-style: italic;
@@ -1544,7 +1600,7 @@ main{
 	text-transform: uppercase;
 	font-family: 'Lobster Two', cursive, sans-serif;
 	transition: all 0.5s ease-in-out;
-}
+} */
 
 .skill-item .content{
 	color: #fff;
@@ -1565,10 +1621,10 @@ main{
 	text-transform: uppercase;
 }
    
-.skill-item:hover .taux span{
+/* .skill-item:hover .taux span{
 	font-size: 2.1rem;
 	color: #000;
-}
+} */
 
 .skill-item:hover .content span{
 	font-size: 1.6rem;
