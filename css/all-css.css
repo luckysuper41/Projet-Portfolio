@@ -418,7 +418,7 @@ body::-webkit-scrollbar {
      font-weight: 600;
    }
    
-   .content a:focus{
+   .content a:active{
      color: #03e9f4;
      background: #333;
      transform: scale(0.97);
