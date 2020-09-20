@@ -1441,7 +1441,7 @@ main{
 	justify-content: center;
 	align-items: center;
 	padding-top: 20px;
-	transition: all 0.5s ease-in-out;
+	transition: all 0.4s ease-in-out;
 }
 
 .skill-item .taux{
@@ -1626,9 +1626,9 @@ main{
 	color: #000;
 } */
 
-.skill-item:hover .content span{
+/* .skill-item:hover .content span{
 	font-size: 1.6rem;
-}
+} */
 
 .skill-item:hover{
 	transform: scale(1.05);
